@@ -8,9 +8,7 @@ public class SoftwareDevelopment extends Department {
     }
     // Erase the content. Fill in the blanks. It returns number.
     public static int getNumber() {
-
-        return 0;
-
+        return Department.number;
     }
 
 }

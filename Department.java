@@ -8,12 +8,19 @@ public class Department {
 
 	// Do not change anything in this method
 	public String getName() {
+
 		return name;
 	}
 
 
-	// Fill in the blanks. 
+
+
+	// Fill in the blanks.
 	public Department(String name, int numberOfEmployee) {
+           this.name = name;
+		   this.numberOfWorker=numberOfEmployee;
+		   number++;
+
 
 
 	}
@@ -21,7 +28,7 @@ public class Department {
 	@Override
 	public boolean equals(Object obj) {
 
-		return false;
+		return obj.equals(getName()) == obj.equals(numberOfWorker);
 
 	}
 	// Erase the content. Fill in the blanks. Format: [name]/[numberOfWorker]
@@ -29,11 +36,11 @@ public class Department {
 	@Override
 	public String toString() {
 
-		return "";
+		return name+"/number of worker : "+numberOfWorker;
 
 	}
 
 		
-		
+
 
 }

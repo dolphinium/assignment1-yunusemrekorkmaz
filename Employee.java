@@ -9,7 +9,6 @@ public abstract class Employee extends Person {
 
 	}
 	public Employee(String name, int yearOfSeniority) {
-
 		this.name = name;
 		this.yearOfSeniority = yearOfSeniority;
 		number++;

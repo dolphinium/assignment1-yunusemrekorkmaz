@@ -11,15 +11,20 @@ public class SoftwareDeveloper extends Employee {
 
 	// Fill in the blanks. Do not forget to use the keyword "super"
 	public SoftwareDeveloper(String name, int yearOfSeniority, String projectName, Department department) {
-
+    super(name,yearOfSeniority);
+    this.projectName=projectName;
+    this.department=department;
 	}
 
 	// Erase the content. Fill in the blanks. If yearOfSeniority and projectName are equal, it returns true
 	@Override
 	public boolean equals(Object obj) {
 
-				return false;
-		}
+		return	(this.projectName.equals(((SoftwareDeveloper)obj).projectName) && this.yearOfSeniority==((SoftwareDeveloper)obj).yearOfSeniority);
+
+	}
+
+
 
 	// Erase the content.
 	// Fill in the blanks. Format: [name]@[departmentName]-P:[projectName]-S:[yearOfSeniority]
@@ -27,7 +32,7 @@ public class SoftwareDeveloper extends Employee {
 	@Override
 	public String toString() {
 
-		return "";
+		return name+"@" + department.name + "-P:"+projectName+"-S:"+yearOfSeniority;
 
 	}
 
@@ -36,6 +41,6 @@ public class SoftwareDeveloper extends Employee {
 	@Override
 	public double calculateSalary() {
 
-		return 0;
+		return 2000 +  30 * (Math.pow(yearOfSeniority,2));
 	}
 }

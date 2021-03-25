@@ -40,9 +40,10 @@ public class Test {
 		if (s6.calculateSalary() == 5000.0) {
 			score += 10;
 		}
-				
+
+
 		System.out.println("your grade is " + score);
-		
+
 	}
 	
 }
